@@ -6,7 +6,7 @@ import cucumber.api.junit.Cucumber;
  
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		features = "Feature/AutoGravityTest.feature"
+		features = "Feature/AutoLoanSignUp.feature"
 		,glue={"stepDefinition"}
 		,monochrome = true
 		,plugin={"pretty","html:Results/cucumber", "json:Results/cucumber_report.json"}
