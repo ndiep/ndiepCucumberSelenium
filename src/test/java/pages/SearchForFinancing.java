@@ -24,13 +24,13 @@ public class SearchForFinancing {
 	
 	// Residence Information
 	By residentStatus = By.cssSelector("#agselecthouseinfo");
-	By residentStatusOwn = By.cssSelector("body > div:nth-child(13) > div > div > div > div:nth-child(2) > span > div > div > div");
+	By residentStatusOwn = By.xpath("//div[text()='Own']/ancestor::span[@role='menuitem']");
 	
 	By address = By.cssSelector("#aginputaddress");
 	By city = By.cssSelector("#aginputcity");
 	
 	By stateDropdown = By.cssSelector("#agselectstate");
-	By stateCalifornia = By.cssSelector("body > div:nth-child(13) > div > div > div > div:nth-child(5) > span > div > div > div");
+	By stateCalifornia = By.xpath("//div[text()='California']/ancestor::span[@role='menuitem']");
 	
 	By zipcode = By.cssSelector("#aginputzip");
 	By moveInDate = By.cssSelector("#aginputmoveindate");
@@ -38,7 +38,7 @@ public class SearchForFinancing {
 	
 	// Employment Information
 	By employmentStatus = By.cssSelector("#agselectemployment-status");
-	By employmentFullTime = By.cssSelector("body > div:nth-child(13) > div > div > div > div:nth-child(1) > span > div > div > div");
+	By employmentFullTime = By.xpath("//div[text()='Full Time']/ancestor::span[@role='menuitem']");
 	By employmentName = By.cssSelector("#employer-name");
 	By employmentTitle = By.cssSelector("#employee-title");
 	By employmentDate = By.cssSelector("#employee-start-date");
@@ -50,9 +50,9 @@ public class SearchForFinancing {
 	}
 	
 	public void clickStartFinancing() throws InterruptedException {
-		WebDriverWait wait = new WebDriverWait(driver, 15);
-		wait.until(ExpectedConditions.visibilityOfElementLocated(continueButton));
-		wait.until(ExpectedConditions.elementToBeClickable(continueButton));
+		WebDriverWait generalWait = new WebDriverWait(driver, 15);
+		generalWait.until(ExpectedConditions.visibilityOfElementLocated(continueButton));
+		generalWait.until(ExpectedConditions.elementToBeClickable(continueButton));
 		driver.findElement(continueButton).click();
 	}
 	
@@ -61,26 +61,28 @@ public class SearchForFinancing {
 		driver.findElement(lastName).sendKeys("lastnametest");
 		driver.findElement(dateOfBirth).sendKeys("01011980");
 		driver.findElement(mobilePhone).sendKeys("5555555555");
-		driver.findElement(email).sendKeys("test007@test.com");
+		driver.findElement(email).sendKeys("test0002@test.com");
 		driver.findElement(password).sendKeys("Password01");
 		driver.findElement(confirmPassword).sendKeys("Password01");
 		driver.findElement(continueButton).click();
 	}
 	
 	public void fillOutResidence() throws InterruptedException{
-		WebDriverWait wait = new WebDriverWait(driver, 15);
+		WebDriverWait generalWait = new WebDriverWait(driver, 15);
 		
 		driver.findElement(residentStatus).click();
+		//Sleep for Animation
+		Thread.sleep(2000);
 		driver.findElement(residentStatusOwn).click();
 		
-		wait.until(ExpectedConditions.visibilityOfElementLocated(address));
+		generalWait.until(ExpectedConditions.visibilityOfElementLocated(address));
 		driver.findElement(address).sendKeys("49 Discovery");
 		driver.findElement(city).sendKeys("Irvine");
 		
 		driver.findElement(stateDropdown).click();
 		
 		//wait for animation for element to show
-		wait.until(ExpectedConditions.visibilityOfElementLocated(stateCalifornia));
+		generalWait.until(ExpectedConditions.visibilityOfElementLocated(stateCalifornia));
 		driver.findElement(stateCalifornia).click();
 		//sleep for animation to end
 		Thread.sleep(2000);
@@ -92,11 +94,11 @@ public class SearchForFinancing {
 	}
 	
 	public void fillOutEmployment() throws InterruptedException{
-		WebDriverWait wait = new WebDriverWait(driver, 15);
+		WebDriverWait generalWait = new WebDriverWait(driver, 15);
 		
 		driver.findElement(employmentStatus).click();
-		wait.until(ExpectedConditions.visibilityOfElementLocated(employmentFullTime));
-		wait.until(ExpectedConditions.elementToBeClickable(employmentFullTime));
+		generalWait.until(ExpectedConditions.visibilityOfElementLocated(employmentFullTime));
+		generalWait.until(ExpectedConditions.elementToBeClickable(employmentFullTime));
 		driver.findElement(employmentFullTime).click();
 		//Sleep again for animation to end
 		Thread.sleep(1000);

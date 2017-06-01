@@ -1,4 +1,4 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("Feature/AutoGravityTest.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("Feature/AutoLoanSignUp.feature");
 formatter.feature({
   "line": 2,
   "name": "AutoGravityTest",
@@ -13,7 +13,7 @@ formatter.feature({
   ]
 });
 formatter.before({
-  "duration": 4777764101,
+  "duration": 4495397477,
   "status": "passed"
 });
 formatter.scenario({
@@ -83,81 +83,81 @@ formatter.match({
   "location": "Test_Steps.user_is_on_apply_page()"
 });
 formatter.result({
-  "duration": 3965675239,
+  "duration": 2775056552,
   "status": "passed"
 });
 formatter.match({
   "location": "Test_Steps.i_choose_a_make()"
 });
 formatter.result({
-  "duration": 97159533,
+  "duration": 110515289,
   "status": "passed"
 });
 formatter.match({
   "location": "Test_Steps.i_choose_a_model()"
 });
 formatter.result({
-  "duration": 232852345,
+  "duration": 1042029663,
   "status": "passed"
 });
 formatter.match({
   "location": "Test_Steps.i_select_a_trim()"
 });
 formatter.result({
-  "duration": 224498364,
+  "duration": 231387998,
   "status": "passed"
 });
 formatter.match({
   "location": "Test_Steps.i_click_select_loan()"
 });
 formatter.result({
-  "duration": 124628932,
+  "duration": 1113905588,
   "status": "passed"
 });
 formatter.match({
   "location": "Test_Steps.i_should_be_on_find_a_dealership()"
 });
 formatter.result({
-  "duration": 571658,
+  "duration": 536165,
   "status": "passed"
 });
 formatter.match({
   "location": "Test_Steps.i_enter_in_city()"
 });
 formatter.result({
-  "duration": 1041487851,
+  "duration": 1140650398,
   "status": "passed"
 });
 formatter.match({
   "location": "Test_Steps.i_select_dealer_from_list()"
 });
 formatter.result({
-  "duration": 1056903352,
+  "duration": 5643291010,
   "status": "passed"
 });
 formatter.match({
   "location": "Test_Steps.i_should_be_on_search_for_financing()"
 });
 formatter.result({
-  "duration": 608283,
+  "duration": 737793,
   "status": "passed"
 });
 formatter.match({
   "location": "Test_Steps.i_start_financing()"
 });
 formatter.result({
-  "duration": 2094271038,
+  "duration": 1737153470,
   "status": "passed"
 });
 formatter.match({
   "location": "Test_Steps.i_enter_in_personal_information()"
 });
 formatter.result({
-  "duration": 19881262465,
+  "duration": 21744893124,
   "status": "passed"
 });
 formatter.after({
-  "duration": 12461,
+  "duration": 24165,
   "status": "passed"
 });
 });
