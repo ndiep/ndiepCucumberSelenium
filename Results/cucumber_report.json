@@ -1,0 +1,182 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 4777764101,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Test_Steps.beforeScenario()"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "Title of your scenario",
+        "description": "",
+        "id": "autogravitytest;title-of-your-scenario",
+        "after": [
+          {
+            "result": {
+              "duration": 12461,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Test_Steps.afterScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3965675239,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user is on apply page",
+            "match": {
+              "location": "Test_Steps.user_is_on_apply_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 97159533,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I choose a make",
+            "match": {
+              "location": "Test_Steps.i_choose_a_make()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 232852345,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I choose a model",
+            "match": {
+              "location": "Test_Steps.i_choose_a_model()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 224498364,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I select a trim",
+            "match": {
+              "location": "Test_Steps.i_select_a_trim()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 124628932,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I click select loan",
+            "match": {
+              "location": "Test_Steps.i_click_select_loan()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 571658,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I should be on find a dealership",
+            "match": {
+              "location": "Test_Steps.i_should_be_on_find_a_dealership()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1041487851,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I enter in city",
+            "match": {
+              "location": "Test_Steps.i_enter_in_city()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1056903352,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I select dealer from list",
+            "match": {
+              "location": "Test_Steps.i_select_dealer_from_list()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 608283,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I should be on search for financing",
+            "match": {
+              "location": "Test_Steps.i_should_be_on_search_for_financing()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2094271038,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I start financing",
+            "match": {
+              "location": "Test_Steps.i_start_financing()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 19881262465,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I enter in personal information",
+            "match": {
+              "location": "Test_Steps.i_enter_in_personal_information()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "AutoGravityTest",
+    "description": "Goes through searching for car and loan",
+    "id": "autogravitytest",
+    "keyword": "Feature",
+    "uri": "Feature/AutoGravityTest.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@AutoGravityTest"
+      }
+    ]
+  }
+]
